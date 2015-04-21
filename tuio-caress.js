@@ -13,9 +13,9 @@ if(Meteor.isClient) {
 if(Meteor.isServer) {
     Meteor.startup(function() {
 
-        var io = Meteor.npmRequire('socket.io')(5000);
+        var io = Npm.require('socket.io')(5000);
+        var CaressServer = Npm.require('caress-server');
 
-        var CaressServer = Meteor.npmRequire('caress-server');
         var caressServer = new CaressServer('0.0.0.0', 3333, {debug: false, json: true});
 
         io.on('connection', function(socket) {
