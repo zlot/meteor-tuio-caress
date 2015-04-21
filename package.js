@@ -2,7 +2,7 @@ Package.describe({
   name: 'zlot:tuio-caress',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Converts TUIO events into W3C Touch Events. This is a meteor wrapper for the caress server/client combo by ekryski.',
   // URL to the Git repository containing the source code for this package.
   git: '',
   // By default, Meteor will default to using README.md for documentation.
